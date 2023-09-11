@@ -19,11 +19,11 @@ class CourseMaterialRepositoryTest {
     @Test
     public void saveCourseMaterialTest(){
         Course course = Course.builder()
-                .title("DSA")
+                .title("CPA")
                 .credit(6)
                 .build();
         CourseMaterial cm = CourseMaterial.builder()
-                .url("www.google.com")
+                .url("www.dailylearn.com")
                 .course(course)
                 .build();
         courseMaterialRepository.save(cm);
